@@ -77,3 +77,126 @@ section {
     width: 95vw;
   }
 }
+
+.section-loading {
+  justify-content: center;
+  text-align: center;
+}
+.underline {
+  background: #2caeba;
+  width: 5rem;
+  height: 0.25rem;
+  margin: 0 auto 1rem auto;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.jobs-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.job-info h3 {
+  font-weight: 400;
+}
+.job-info h4 {
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  color: #2caeba;
+  background: hsl(212, 33%, 89%);
+  display: inline-block;
+  padding: 0.35rem 0.35rem;
+}
+.job-date {
+  letter-spacing: 0.1rem;
+}
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin: 0 0 1.25rem 0;
+}
+
+.job-desc p {
+  color: hsl(209, 34%, 30%);
+}
+.job-icon {
+  color: hsl(185, 81%, 29%);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+}
+.job-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: 0.25rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: hsl(210, 36%, 96%);
+}
+.job-btn:hover {
+  color: #2caeba;
+  box-shadow: 0 2px #2caeba;
+}
+.active-btn {
+  color: #2caeba;
+  box-shadow: 0 2px #2caeba;
+}
+.btn {
+  text-transform: capitalize;
+  background: #2caeba;
+  color: hsl(185, 94%, 87%);
+  padding: 0.3rem 0.75rem;
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3sec linear;
+  font-size: 0.8rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  display: block;
+  width: 12rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.btn:hover {
+  color: hsl(184, 91%, 17%);
+  background: hsl(210, 22%, 49%);
+}
+@media screen and (min-width: 992px) {
+  .jobs-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 4rem;
+  }
+  .btn-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .job-btn {
+    margin-bottom: 1rem;
+  }
+  .active-btn {
+    box-shadow: -2px 0 #2caeba;
+  }
+  .job-btn:hover {
+    box-shadow: -2px 0 #2caeba;
+  }
+}
